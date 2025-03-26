@@ -15,7 +15,8 @@ describe('getJoke API', () => {
                 type: 'single',
                 joke: 'We messed up the keming again guys.',
                 lang: 'en'
-            })
+            }),
+            { status: 200 }
         );
 
         const joke = await getJoke();
@@ -29,7 +30,8 @@ describe('getJoke API', () => {
                 setup: 'Why don’t skeletons fight each other?',
                 delivery: 'Because they don’t have the guts.',
                 lang: 'en'
-            })
+            }),
+            { status: 200 }
         );
 
         const joke = await getJoke();
